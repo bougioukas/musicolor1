@@ -2,9 +2,15 @@
 % Please edit documentation in R/direstraits_color_scale.R
 \name{scale_color_direstraits}
 \alias{scale_color_direstraits}
-\title{Create ggplot scale color direstraits}
+\alias{scale_colour_direstraits}
+\alias{scale_fill_direstraits}
+\title{Create ggplot scale color Dire Straits}
 \usage{
+scale_colour_direstraits(palette = "money_for_nothing", direction = 1, ...)
+
 scale_color_direstraits(palette = "money_for_nothing", direction = 1, ...)
+
+scale_fill_direstraits(palette = "money_for_nothing", direction = 1, ...)
 }
 \arguments{
 \item{palette}{Select a color palette from dire straits album covers}
@@ -14,14 +20,19 @@ scale_color_direstraits(palette = "money_for_nothing", direction = 1, ...)
 \item{...}{More arguments}
 }
 \value{
+scale_colour_direstraits
+
 scale_color_direstraits
+
+scale_fill_direstraits
 }
 \description{
-Create a color palette from Dire Straits album covers
+Create ggplot scale color for Dire Straits.
 }
-\examples{
-ggplot2::ggplot(iris, ggplot2::aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
-  ggplot2::geom_point(size = 5.0) +
-  scale_color_direstraits("so_far_away") +
-  ggplot2::theme_minimal()
+\details{
+colour palette from dire straits
+
+color palette from dire straits
+
+fill palette from dire straits
 }

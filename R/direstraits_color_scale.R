@@ -1,6 +1,6 @@
-#' @title Create ggplot scale color direstraits
+#' Create ggplot scale color Dire Straits
 #'
-#' @description Create a color palette from Dire Straits album covers
+#' Create ggplot scale color for Dire Straits.
 #'
 #' @param palette Select a color palette from dire straits album covers
 #'
@@ -8,14 +8,34 @@
 #'
 #' @param ... More arguments
 #'
+#' @return scale_colour_direstraits
+#'
 #' @return scale_color_direstraits
 #'
-#' @example man/examples/example1.R
+#' @return scale_fill_direstraits
+#'
+#' @name scale_color_direstraits
+#'
+#' @rdname scale_color_direstraits
+#'
+#' @details colour palette from dire straits
 #'
 #' @export
+scale_colour_direstraits <- function(palette = "money_for_nothing", direction = 1, ...) {
+
+  ggplot2::discrete_scale(
+    "colour", "direstraits",
+    direstraits_palette_gen(palette, direction),
+    ...
+  )
+}
 
 
-
+#' @rdname scale_color_direstraits
+#'
+#' @details color palette from dire straits
+#'
+#' @export
 scale_color_direstraits <- function(palette = "money_for_nothing", direction = 1, ...) {
 
   ggplot2::discrete_scale(
@@ -24,4 +44,23 @@ scale_color_direstraits <- function(palette = "money_for_nothing", direction = 1
     ...
   )
 }
+
+
+#' @rdname scale_color_direstraits
+#'
+#' @details fill palette from dire straits
+#'
+#' @export
+scale_fill_direstraits <- function(palette = "money_for_nothing", direction = 1, ...) {
+
+  ggplot2::discrete_scale(
+    "fill", "direstraits",
+    direstraits_palette_gen(palette, direction),
+    ...
+  )
+}
+
+
+
+
 
