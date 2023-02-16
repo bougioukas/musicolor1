@@ -1,4 +1,4 @@
-#' Create ggplot scale color Dire Straits
+#' Create ggplot scale for color based on Dire Straits album covers
 #'
 #' Create ggplot scale color for Dire Straits.
 #'
@@ -59,8 +59,3 @@ scale_fill_direstraits <- function(palette = "money_for_nothing", direction = 1,
     ...
   )
 }
-
-
-
-
-
